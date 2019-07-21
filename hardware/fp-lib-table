@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name Gameboy)(type KiCad)(uri "$(KIPRJMOD)/Gekkio_Connector_PCBEdge.pretty")(options "")(descr ""))
+  (lib (name SparkFun)(type KiCad)(uri "$(KIPRJMOD)/Connectors.pretty")(options "")(descr ""))
+  (lib (name WinBond)(type KiCad)(uri "$(KIPRJMOD)/Winbond")(options "")(descr ""))
+)

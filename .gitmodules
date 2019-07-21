@@ -1,0 +1,3 @@
+[submodule "code/gbrom/supermarioland"]
+	path = code/gbrom/supermarioland
+	url = git@github.com:kaspermeerts/supermarioland.git

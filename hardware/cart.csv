@@ -1,0 +1,13 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"U1";"LQFP-144_20x20mm_P0.5mm";1;"STM32F446ZETx";;;
+2;"U3";"SOIC-8_3.9x4.9mm_P1.27mm";1;"W25Q128JVSIQ";;;
+3;"MK2";"MountingHole_2.3mm";1;"DNF";;;
+4;"MK1";"MountingHole_7.2mm";1;"DNF";;;
+5;"C8";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";1;"74uF";;;
+6;"C7,C6,C5,C4,C2";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";5;"100nF";;;
+7;"SPIHDR1,SWDHDR1";"1X06_LOCK";2;"Conn_01x06";;;
+8;"C1";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";1;"1uF";;;
+9;"C3";"C_0603_1608Metric_Pad1.05x0.95mm_HandSolder";1;"470pF";;;
+10;"J1";"GameBoy_Cartridge_1x32_P1.50mm_Edge";1;"GameBoy_Cartridge";;;
+11;"10k1";"R_0603_1608Metric_Pad1.05x0.95mm_HandSolder";1;"R_AUD";;;
+12;"U2";"SOT-23-5";1;"MIC5219-3.3";;;

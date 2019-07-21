@@ -1,0 +1,9 @@
+*.bin
+*.elf
+*.hex
+data/*.h
+data/*.c
+audio_constants.h
+rom_patch.h
+supermarioland/audio_constants.asm
+music/*.wav

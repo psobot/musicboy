@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name Winbond)(type Legacy)(uri /Users/psobot/Dropbox/pushergb/cart/Winbond.lib)(options "")(descr ""))
+  (lib (name Gekkio_Connector_Specialized)(type Legacy)(uri /Users/psobot/Dropbox/pushergb/cart/Gekkio_Connector_Specialized.lib)(options "")(descr ""))
+  (lib (name GameBoy_Cartridge_1x32_P1.50mm_Edge)(type Legacy)(uri /Users/psobot/Dropbox/pushergb/cart/GameBoy_Cartridge_1x32_P1.50mm_Edge.kicad_mod)(options "")(descr ""))
+  (lib (name Seeed)(type Legacy)(uri ${KIPRJMOD}/seedopl)(options "")(descr ""))
+  (lib (name SparkFun-Connectors)(type Legacy)(uri /Volumes/why/SparkFun-KiCad-Libraries/Libraries/SparkFun-Connectors.lib)(options "")(descr ""))
+  (lib (name SparkFun-Connectors-Footprints)(type Legacy)(uri /Volumes/why/SparkFun-KiCad-Libraries/Footprints/Connectors.pretty/1X06_LOCK.kicad_mod)(options "")(descr ""))
+)

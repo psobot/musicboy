@@ -1,0 +1,6 @@
+audio_constants.asm
+baserom.gb
+*.gb
+*.map
+*.sym
+*.2bpp

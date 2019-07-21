@@ -1,0 +1,92 @@
+
+(rules PCB cart
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 7550)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.2)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    "@:no_net_0"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    GND VIN +5V "Net-(C3-Pad1)" +3V3 "SPI_CS" "SPI_DO" "Net-(U3-Pad3)"
+    "SPI_DI" "SPI_CLK" "Net-(U3-Pad7)" "Net-(U1-Pad7)" "Net-(U1-Pad8)" "Net-(U1-Pad9)" "Net-(U1-Pad10)" "Net-(U1-Pad11)"
+    "Net-(U1-Pad12)" "Net-(U1-Pad13)" "Net-(U1-Pad14)" "Net-(U1-Pad15)" "Net-(U1-Pad18)" "Net-(U1-Pad19)" "Net-(U1-Pad20)" "Net-(U1-Pad21)"
+    "Net-(U1-Pad22)" "Net-(U1-Pad23)" "Net-(U1-Pad24)" NRST "Net-(U1-Pad27)" "Net-(U1-Pad34)" "Net-(U1-Pad35)" "Net-(U1-Pad36)"
+    "Net-(U1-Pad37)" "Net-(U1-Pad44)" "Net-(U1-Pad45)" "Net-(U1-Pad46)" "Net-(U1-Pad47)" "Net-(U1-Pad48)" "Net-(U1-Pad49)" "Net-(U1-Pad50)"
+    "Net-(U1-Pad53)" "Net-(U1-Pad54)" "Net-(U1-Pad55)" "Net-(U1-Pad57)" "Net-(U1-Pad69)" "Net-(U1-Pad70)" "Net-(U1-Pad73)" "Net-(U1-Pad74)"
+    "Net-(U1-Pad75)" "Net-(U1-Pad76)" "Net-(U1-Pad77)" "Net-(U1-Pad78)" "Net-(U1-Pad79)" "Net-(U1-Pad80)" "Net-(U1-Pad87)" "Net-(U1-Pad88)"
+    "Net-(U1-Pad89)" "Net-(U1-Pad90)" "Net-(U1-Pad91)" "Net-(U1-Pad92)" "Net-(U1-Pad93)" "Net-(U1-Pad96)" "Net-(U1-Pad97)" "Net-(U1-Pad100)"
+    "Net-(U1-Pad101)" "Net-(U1-Pad102)" "Net-(U1-Pad103)" "Net-(U1-Pad104)" SWDIO SWDCLK "Net-(U1-Pad110)" "Net-(U1-Pad113)"
+    "Net-(U1-Pad124)" "Net-(U1-Pad125)" "Net-(U1-Pad126)" "Net-(U1-Pad127)" "Net-(U1-Pad128)" "Net-(U1-Pad129)" "Net-(U1-Pad132)" "Net-(U1-Pad134)"
+    "Net-(U1-Pad135)" "Net-(U1-Pad136)" "Net-(U1-Pad137)" "Net-(U1-Pad139)" "Net-(U1-Pad140)" "Net-(J1-Pad5)" GBDATA2 GBDATA3
+    GBDATA4 GBDATA5 GBDATA6 GBCLK GBREAD GBWRITE GBDATA7 GBADDR12
+    GBADDR13 GBADDR14 GBADDR15 GBADDR8 GBADDR9 GBADDR10 GBADDR11 GBADDR0
+    GBADDR1 GBADDR2 GBADDR3 GBADDR4 GBADDR5 GBADDR6 GBADDR7 GBDATA0
+    GBDATA1 GBRESET "Net-(U1-Pad1)" "Net-(U1-Pad2)" "Net-(U1-Pad3)" "Net-(U1-Pad4)" "Net-(U1-Pad5)" "Net-(U1-Pad58)"
+    "Net-(U1-Pad141)" "Net-(U1-Pad142)" "Net-(C10-Pad1)" "Net-(C9-Pad1)" "Net-(CP1-Pad1)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
