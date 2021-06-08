@@ -1,2 +1,2 @@
 tqdm==4.8.4
-Pillow==4.2.0 # nice
+Pillow==8.2.0 # nice
