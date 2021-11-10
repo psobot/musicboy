@@ -117,7 +117,7 @@ Note that if you want to compile the project completely, you'll need:
 
 ## Hardware Design
 
-The `hardware` directory contains a [KiCad](http://kicad-pcb.org/) project and all of its dependencies.
+The `hardware` directory contains a [KiCad](http://kicad.org/) project and all of its dependencies.
 
 If you plan to print circuit boards, make sure you use 0.8mm thick PCBs. The PCB dimensions should be 61mm*51.4mm, with a notch on one corner.
 
